@@ -25,11 +25,27 @@ $(function() {
 			$('.news-items').hide();
 			$(target).show();
 			break;
+			case '#music':
+			$('.news-items').hide();
+			$(target).show();
+			break;
 			default:
 			console.log('not detected id = ' + target);
 		}
 
-
-
+		$('body').getNiceScroll().resize();
 	});
+
+
+	$('body').niceScroll({
+		horizrailenabled: false,
+		cursorcolor: '#333',
+		background: '#fff',
+		cursoropacitymin: 0.5,
+		cursorwidth: '10px',
+		cursorborder: 'none',
+		cursorborderradius: '5px',
+		railpadding: { top: 0, right: 0, left: 0, bottom: 0 },
+	});
+
 });

@@ -8,6 +8,7 @@ const path           = require('../path');
 gulp.task('js', function() {
 	return gulp.src([
 		'dev/libs/jquery/jquery-3.2.1.min.js',
+		'dev/libs/jquery.nicescroll/jquery.nicescroll.js',
 		'dev/libs/svg4everybody/svg4everybody.legacy.js',
 		'dev/js/custom.js',
 		])
